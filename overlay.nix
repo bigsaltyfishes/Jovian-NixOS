@@ -103,4 +103,7 @@ rec {
 
   decky-loader = final.callPackage ./pkgs/decky-loader/stable.nix { };
   decky-loader-prerelease = final.callPackage ./pkgs/decky-loader/prerelease.nix { };
+
+  pyzy = final.callPackage ./pkgs/pyzy { };
+  ibus-pinyin = final.callPackage ./pkgs/ibus-pinyin { };
 }
