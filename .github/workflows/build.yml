@@ -32,9 +32,6 @@ jobs:
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@v4
 
-      - name: Setup automatic caching
-        uses: DeterminateSystems/magic-nix-cache-action@v2
-
       - name: Install nix-build-uncached
         # Save evaluation time by pulling directly from cache.nixos.org
         # nixpkgs rev 12303c652b881435065a98729eb7278313041e49
