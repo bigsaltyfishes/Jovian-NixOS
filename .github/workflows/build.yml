@@ -32,9 +32,4 @@ jobs:
       - name: Install Lix
         uses: samueldr/lix-gha-installer-action@v1
 
-      - name: Install nix-build-uncached
-        # Save evaluation time by pulling directly from cache.nixos.org
-        # nixpkgs rev 12303c652b881435065a98729eb7278313041e49
-        run: nix-env -i /nix/store/npzpwxjbxlgbi0kfji2x44nssksxk4zw-nix-build-uncached-1.1.2
-
-      - run: nix-build-uncached .ci/get-flake.nix -A "${{ matrix.attr }}"
+      - run: nix-build .ci/get-flake.nix -A "${{ matrix.attr }}"
