@@ -46,7 +46,7 @@ in
         extraPackages32 = [ pkgs.pkgsi686Linux.gamescope-wsi ];
       };
 
-      hardware.pulseaudio.support32Bit = true;
+      services.pulseaudio.support32Bit = true;
       hardware.steam-hardware.enable = mkDefault true;
 
       environment.systemPackages = [ pkgs.gamescope-session pkgs.steamos-polkit-helpers pkgs.steamos-manager ];

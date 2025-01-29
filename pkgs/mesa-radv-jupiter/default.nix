@@ -46,5 +46,6 @@ in stdenv.mkDerivation {
     "-D valgrind=enabled"
     "-D intel-rt=disabled"
     "-D radv-build-id=da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "-D gpuvis=true"
   ];
 }

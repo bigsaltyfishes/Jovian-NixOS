@@ -32,7 +32,7 @@ alsa-ucm-conf.check = "1.2.12-1.1"
 atomupd-daemon.ignore = true
 
 # FIXME: has some not-yet-upstream patches, maybe we want them in nixpkgs?
-bluez.check = "5.79-1.2"
+bluez.check = "5.79-1.6"
 
 # more A/B stuff
 bmap-tools.ignore = true
@@ -50,7 +50,7 @@ casync.ignore = true
 ckbcomp.ignore = true
 
 # just disables tests
-clang.check = "18.1.8-4.1"
+clang.check = "18.1.8-4.2"
 
 # unused
 debos-git.ignore = true
@@ -137,12 +137,12 @@ iwd.check = "3.0-1"
 
 jupiter-dock-updater-bin = { map = true, pkgrel = 1 }
 
-jupiter-fan-control = { map = true, pkgrel = 3 }
+jupiter-fan-control = { map = true, pkgrel = 4 }
 
 # we have our own, better one
 jupiter-firewall.ignore = true
 
-jupiter-hw-support = { map = ["jupiter-hw-support", "steamdeck-hw-theme", "steamdeck-firmware", "steamos-polkit-helpers"], pkgrel = 1 }
+jupiter-hw-support = { map = ["jupiter-hw-support", "steamdeck-hw-theme", "steamdeck-firmware", "steamos-polkit-helpers"], pkgrel = 2 }
 
 jupiter-legacy-support.check = "1.152-1"
 
@@ -194,19 +194,22 @@ linux-neptune-rtw-debug.ignore = true
 # new kernel
 linux-neptune-68 = { map = "linux_jovian", pkgrel = 1 }
 
+# very new kernel
+linux-neptune-611.ignore = true
+
 # we don't identify as SteamOS
 lsb-release.ignore = true
 
 # packaging changes, removes a heavy dependency
-maliit-keyboard.check = "2.3.1-3.1"
+maliit-keyboard.check = "2.3.1-4.1"
 
 # nixpkgs is ahead currently
 mangohud.check = "0.7.2.rc3.r11.g31f2ca5-2.3"
 
 # we take upstream patches and apply on top of our mesa
-mesa.check = "24.0.5.183660.radeonsi_24.0.4-1.1"
+mesa.check = "24.0.5.183660.radeonsi_24.0.4-1.2"
 
-mesa-radv = { map = "mesa-radv-jupiter", pkgrel = "1", fixup = "mesa" }
+mesa-radv = { map = "mesa-radv-jupiter", pkgrel = "3", fixup = "mesa" }
 
 # some old test thing
 mesa-unstable.ignore = true
@@ -219,14 +222,14 @@ neptune-ctl.ignore = true
 
 # we don't actually apply any of this, but it's worth checking
 # FIXME?
-networkmanager.check = "1.50.0-1.1"
+networkmanager.check = "1.50.0-1.2"
 
 # Arch stuff
 pacman-contrib.ignore = true
 paru.ignore = true
 
 # we ship a newer version, but patches may be valuable
-pipewire.check = "1:1.2.6-1.1"
+pipewire.check = "1:1.2.6-1.2"
 
 # builds from master branch for Qt6
 # FIXME: do we want this?
@@ -309,7 +312,7 @@ steamos-media-creation-git.ignore = true
 
 # Allows switching between iwd and wpa_supplicant wifi backends from Steam
 # FIXME: doesn't seem to be wired up?
-steamos-networking-tools.check = "1.1-1"
+steamos-networking-tools.check = "1.1-2"
 
 # more A/B stuff
 steamos-repair-backend-git.ignore = true
@@ -332,7 +335,7 @@ ttf-twemoji-default.ignore = true
 umr.ignore = true
 
 # just disables tests, but may have stuff later
-upower.check = "0.99.15.jupiter-1.3"
+upower.check = "0.99.15.jupiter-1.4"
 
 # non-critical but would be nice to have
 # FIXME: package these
@@ -344,7 +347,7 @@ vpower.ignore = true
 
 wakehook = { map = true, pkgrel = 1 }
 
-wireplumber = { map = "wireplumber-jupiter", pkgrel = "1.3" }
+wireplumber = { map = "wireplumber-jupiter", pkgrel = "1.4" }
 
 # ours is newer
 xdg-desktop-portal-gtk.ignore = true
