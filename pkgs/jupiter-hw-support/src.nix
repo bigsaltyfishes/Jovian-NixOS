@@ -30,6 +30,9 @@ stdenv.mkDerivation rec {
     ./0001-format-device-Harden-against-mountpoint-being-listed.patch
   ];
 
+  # broken symlinks will be filled in later
+  dontCheckForBrokenSymlinks = true;
+
   installPhase = ''
     cp -r . $out
   '';
