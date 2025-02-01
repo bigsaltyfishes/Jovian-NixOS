@@ -291,7 +291,7 @@ steamos-atomupd-client.ignore = true
 # applied as NixOS modules instead
 # check both to make sure we get the latest changes
 steamos-customizations-git.check = "20241211.1-1"
-steamos-customizations-jupiter.check = "20241211.1-1"
+steamos-customizations-jupiter.check = "20250117.1-1"
 
 # devkit stuff
 steamos-devkit-service.ignore = true
@@ -312,7 +312,7 @@ steamos-media-creation-git.ignore = true
 
 # Allows switching between iwd and wpa_supplicant wifi backends from Steam
 # FIXME: doesn't seem to be wired up?
-steamos-networking-tools.check = "1.1-2"
+steamos-networking-tools.check = "1.2-1"
 
 # more A/B stuff
 steamos-repair-backend-git.ignore = true
@@ -326,7 +326,7 @@ steamos-systemreport.ignore = true
 steamos-tweak-mtu-probing.check = "1-1"
 
 # SteamOS A/B specific patch
-systemd.check = "256.7-1.1"
+systemd.check = "256.7-1.2"
 
 # lul
 ttf-twemoji-default.ignore = true
