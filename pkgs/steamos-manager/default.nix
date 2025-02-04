@@ -19,7 +19,8 @@ rustPlatform.buildRustPackage rec {
     hash = "sha256-AU3yws5ENrA4flknfbJXp/t9RtkZOaCmrAZ4Bc4uvro=";
   };
 
-  cargoHash = "sha256-HHzQP12/t86OBR1X0JlhmlWDPcBcvjYykh8VPXni9YQ=";
+  useFetchCargoVendor = true;
+  cargoHash = "sha256-nA3hncartcchwFvRUdo3UWWh9nyjT8RhZQHe9cDIies=";
 
   # tests assume Steam Deck hardware
   doCheck = false;
