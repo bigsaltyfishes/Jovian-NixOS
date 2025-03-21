@@ -1,0 +1,25 @@
+From 96e49994b5eef4cb85a3d2bce97ab0ab94f2dc16 Mon Sep 17 00:00:00 2001
+From: bigsaltyfishes <bigsaltyfishes@gmail.com>
+Date: Fri, 21 Mar 2025 22:16:20 +0800
+Subject: [PATCH] nixos handler
+
+---
+ src/steam.rs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/steam.rs b/src/steam.rs
+index 9016141..3b01f04 100644
+--- a/src/steam.rs
++++ b/src/steam.rs
+@@ -33,7 +33,7 @@ impl SteamInstance {
+             PressType::ShortPress => "short",
+         };
+ 
+-        let mut handle = std::process::Command::new("steam-run")
++        let mut handle = std::process::Command::new("@handler@")
+             .args([self.steam_path.as_str(), "-ifrunning", format!("steam://{}powerpress", command).as_str()])
+             .spawn()?;
+ 
+-- 
+2.48.1
+
